@@ -10,14 +10,16 @@ const ensureAuthenticated = require('./Middlewares/Auth');
 
 require('dotenv').config();
 require('./Models/db');
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 10000;
 
 app.get('/sk', (req, res) => {
     res.send('Sandeep Kumar');
 });
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://expense-tracker-kdyg.onrender.com'
+}));
 app.use('/auth', AuthRouter);
 app.use('/products', ProductRouter);
 app.use('/expenses', ensureAuthenticated, ExpenseRouter)
