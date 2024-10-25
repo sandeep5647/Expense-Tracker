@@ -1,0 +1,185 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(22, 241, 241);
+}
+
+h2{
+  padding-top: 5px;
+}
+label {
+  font-size: 20px;
+  color: #E0E0E0; 
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212;
+  color: #E0E0E0; 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1E1E1E;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.container > h1 {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #2C2C2C; 
+  color: #E0E0E0; 
+  border-bottom: 1px solid #444; 
+}
+
+.container input::placeholder {
+  font-size: 12px;
+  font-style: italic;
+  color: #888; 
+}
+
+button {
+  background-color: #622ddb; 
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+button:hover{
+  background-color: #4314b1;
+}
+.user-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-list {
+  font-family: Arial, sans-serif;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444; 
+}
+
+.expense-description {
+  font-weight: bold;
+  color: #E0E0E0;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.amounts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #E0E0E0; 
+}
+
+.balance{
+  color: #07edf5;
+  font-weight: bold;
+}
+
+.income-amount {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.expense-amount {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.custom-btn {
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.custom-btn.add-income {
+  background-color: #28a745;
+  width: 45%;
+  float: left;
+}
+
+.custom-btn.add-income:hover {
+  background-color: #0d8b28;
+}
+
+.custom-btn.add-expense {
+  background-color: #dc3545;
+  float: right;
+  margin-left: 150px;
+  margin-top: -47px;
+}
+
+.custom-btn.add-expense:hover {
+  background-color: #af1323;
+}
