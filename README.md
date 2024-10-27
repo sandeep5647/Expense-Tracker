@@ -21,4 +21,4 @@ The Expense Tracker is a full-stack MERN application that allows users to monito
 - **Additional Visuals**: Introduce enhanced charts and graphs for a more comprehensive overview of financial data and trends.
 
 ### Live Demo
-    https://expense-tracker-kdyg.onrender.com/
+[https://expense-tracker-kdyg.onrender.com/](https://expense-tracker-kdyg.onrender.com/)
